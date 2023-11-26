@@ -38,17 +38,57 @@ Program to design a half subtractor and full subtractor circuit and verify its t
 Developed by: 
 RegisterNumber:  
 */
+## CODE:
 
-## Output:
+HALF SUBTRACTOR:
+```
+module HALFSUB(a,b,difference,borrow);
+input a,b;
+output difference,borrow;
+assign difference = (a^b);
+assign borrow = (~a&b);
+endmodule
+```
+FULL SUBTRACTOR:
+```
+module FULLSUB(a,b,c,difference,borrow);
+input a,b,c;
+output difference,borrow;
+assign difference=(a^b^c);
+assign borrow=(~a&(b^c)|(b&c));
+endmodule
+```
 
-## Truthtable
+
+## TRUTH TABLE:
+
+HALF SUBTRACTOR:
+![image](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/467c8d42-aea8-4c7a-a6ae-e59fb27a4378)
+
+FULL SUBTRACTOR:
+![image](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/77deed51-b1dc-45f4-9513-a4fc19ec2b3e)
+
+
+##  RTL VIEW:
+
+HALF SUBTRACTOR:
+![image](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/657d7d24-2ca3-4395-897c-cc8cf281a7a6)
+
+FULL SUBTRACTOR:
+
+![image](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/71640f64-7ef7-4a90-81b7-0f540aad7052)
 
 
 
-##  RTL realization
+## OUTPUT:
 
+HALF SUBTRACTOR:
+![image](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/b752d582-8c1f-4349-966b-4ee5eddbe92d)
 
-## Timing diagram 
+FULL SUBTRACTOR:
+
+![image](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/cc0f8609-9868-4b63-bf65-651be89088b0)
+
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.

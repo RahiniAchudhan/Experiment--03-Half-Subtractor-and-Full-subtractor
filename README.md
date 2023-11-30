@@ -35,60 +35,44 @@ Write the detailed procedure here
 ## Program:
 /*
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+
+Developed by: RAHINI A
+
+RegisterNumber:  23012479
 */
-## CODE:
 
-HALF SUBTRACTOR:
-```
-module HALFSUB(a,b,difference,borrow);
-input a,b;
-output difference,borrow;
-assign difference = (a^b);
-assign borrow = (~a&b);
-endmodule
-```
-FULL SUBTRACTOR:
-```
-module FULLSUB(a,b,c,difference,borrow);
-input a,b,c;
-output difference,borrow;
-assign difference=(a^b^c);
-assign borrow=(~a&(b^c)|(b&c));
-endmodule
-```
+# HALF SUBTRACTOR:
+
+![HALF SUB PROGRAM](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/069fce14-d5e8-467c-92d6-098e0ed74b7b)
+
+# RTL VIEW OF HALFSUBTRACTOR:
+
+![RTL HALF SUB](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/e86c6c9b-fbeb-46c6-9dd3-4d9cb7015ef0)
+
+# TRUTH TABLE:
+
+![TRUTH HALF SUB](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/5cb5493b-54fd-41ed-9722-219a80d62a13)
+
+# WAVEFORM OF HALFSUBTRACTOR:
+
+![WAVE HALF SUB](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/8ccaa062-e4db-44a8-802c-58b9c133e9d3)
 
 
-## TRUTH TABLE:
+# FULL SUBTRACTOR:
 
-HALF SUBTRACTOR:
-![image](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/467c8d42-aea8-4c7a-a6ae-e59fb27a4378)
+![full sub program](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/05f43306-462e-437e-b3e4-a1330b8deaf5)
 
-FULL SUBTRACTOR:
-![image](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/77deed51-b1dc-45f4-9513-a4fc19ec2b3e)
+# RTL VIEW OF FULLSUBTRACTOR:
 
+![RTL FULLSUB](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/93c871f3-7193-43c4-8f66-5f1f207b3ebe)
 
-##  RTL VIEW:
+# TRUTH TABLE:
 
-HALF SUBTRACTOR:
-![image](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/657d7d24-2ca3-4395-897c-cc8cf281a7a6)
+![TRUTH FULLSUB](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/1dd740d6-a351-483f-a638-d151f9f148cf)
 
-FULL SUBTRACTOR:
+# WAVEFORM OF FULLSUBTRACTOR:
 
-![image](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/71640f64-7ef7-4a90-81b7-0f540aad7052)
-
-
-
-## OUTPUT:
-
-HALF SUBTRACTOR:
-![image](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/b752d582-8c1f-4349-966b-4ee5eddbe92d)
-
-FULL SUBTRACTOR:
-
-![image](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/cc0f8609-9868-4b63-bf65-651be89088b0)
-
+![WAVE FULLSUB](https://github.com/RahiniAchudhan/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742838/9b407083-0ba7-43b0-99eb-73707b975f02)
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
